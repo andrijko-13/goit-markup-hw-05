@@ -44,7 +44,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero-button">Заказать услугу</button>
+                <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!-- Особенности (добавил h2 для семантики, что бы всё было правильно-->
@@ -92,9 +92,30 @@
             <div class="container">
                 <h2 class="what-we-do-title">Чем мы занимаемся</h2>
                 <ul class="what-we-do-list">
-                    <li><img src="./images/what-we-do/workplace.jpg" alt="Рабочий стол" width="370" height="294"></li>
-                    <li><img src="./images/what-we-do/desktop.jpg" alt="Ноубук" width="370" height="294"></li>
-                    <li><img src="./images/what-we-do/tablet.jpg" alt="Планшет" width="370" height="294"></li>
+                    <li>
+                        <div class="we-do-item">
+                            <img src="./images/what-we-do/workplace.jpg" alt="Рабочий стол" width="370" height="294">
+                            <div class="we-do-item-description">
+                                <p class="we-do-text">Десктопные приложения</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="we-do-item">
+                            <img src="./images/what-we-do/desktop.jpg" alt="Ноубук" width="370" height="294">
+                            <div class="we-do-item-description">
+                                <p class="we-do-text">Мобильные приложения</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="we-do-item">
+                            <img src="./images/what-we-do/tablet.jpg" alt="Планшет" width="370" height="294">
+                            <div class="we-do-item-description">
+                                <p class="we-do-text">Дизайнерские решения</p>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -261,6 +282,15 @@
             </div>
         </div>
     </footer>
+    <div class="modal">
+        <button type="button" class="modal-button" data-modal-close="">
+            <svg >
+                <use href="./team-svg/sprite.svg#icon-close">
+                 </use>
+            </svg>
+         </button>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
