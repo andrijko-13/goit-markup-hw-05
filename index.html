@@ -282,15 +282,20 @@
             </div>
         </div>
     </footer>
-    <div class="modal">
-        <button type="button" class="modal-button" data-modal-close="">
-            <svg >
-                <use href="./team-svg/sprite.svg#icon-close">
-                 </use>
-            </svg>
-         </button>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-button" data-modal-close>
+               <svg  class="svg-modal">
+                   <use href="./images/sprite.svg#icon-close">
+                    </use>
+               </svg>
+            </button>
+
+        </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js">
+
+    </script>
 </body>
 
 </html>
